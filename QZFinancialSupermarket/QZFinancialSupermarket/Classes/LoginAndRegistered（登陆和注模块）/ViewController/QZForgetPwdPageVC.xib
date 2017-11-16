@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QZForgetPwdPageVC">
+            <connections>
+                <outlet property="nextBtn" destination="4YC-Eh-yRW" id="moO-Y6-RUw"/>
+                <outlet property="nextBtnTop" destination="Zlb-uV-Hyd" id="7DR-lV-xvG"/>
+                <outlet property="phoneInputView" destination="kRs-13-BmV" id="Pct-7F-MF4"/>
+                <outlet property="smsCodeInputView" destination="PEL-uh-ogV" id="CSz-Gz-JnA"/>
+                <outlet property="top" destination="Nbo-BK-GIu" id="lHt-hZ-ge8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRs-13-BmV" customClass="QZInputView">
+                    <rect key="frame" x="0.0" y="10" width="375" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="kRs-13-BmV" secondAttribute="height" multiplier="375:50" id="fwe-G2-HhN"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PEL-uh-ogV" customClass="QZInputView">
+                    <rect key="frame" x="0.0" y="60" width="375" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4YC-Eh-yRW">
+                    <rect key="frame" x="27.5" y="200" width="320" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="4YC-Eh-yRW" secondAttribute="height" multiplier="320:45" id="9mA-0z-dWr"/>
+                    </constraints>
+                    <connections>
+                        <action selector="nextBtnAction:" destination="-1" eventType="touchUpInside" id="0Tv-mc-Vmg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PEL-uh-ogV" firstAttribute="top" secondItem="kRs-13-BmV" secondAttribute="bottom" id="1UV-fP-omV"/>
+                <constraint firstItem="4YC-Eh-yRW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EFv-HP-dSI"/>
+                <constraint firstAttribute="trailing" secondItem="PEL-uh-ogV" secondAttribute="trailing" id="ImF-KZ-kqE"/>
+                <constraint firstItem="kRs-13-BmV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="Nbo-BK-GIu"/>
+                <constraint firstAttribute="trailing" secondItem="kRs-13-BmV" secondAttribute="trailing" id="XNd-Hm-uba"/>
+                <constraint firstItem="4YC-Eh-yRW" firstAttribute="top" secondItem="PEL-uh-ogV" secondAttribute="bottom" constant="90" id="Zlb-uV-Hyd"/>
+                <constraint firstItem="PEL-uh-ogV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="c8R-2d-9SW"/>
+                <constraint firstItem="4YC-Eh-yRW" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="320:375" id="hRp-Gl-lBU"/>
+                <constraint firstItem="kRs-13-BmV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wl6-K1-63k"/>
+                <constraint firstItem="PEL-uh-ogV" firstAttribute="height" secondItem="kRs-13-BmV" secondAttribute="height" id="xHn-lZ-Uxf"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

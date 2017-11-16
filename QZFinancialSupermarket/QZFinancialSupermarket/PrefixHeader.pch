@@ -1,0 +1,39 @@
+//
+//  PrefixHeader.pch
+//  QZFinancialSupermarket
+//
+//  Created by iOS－CXX on 16/9/23.
+//  Copyright © 2016年 CL. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...){}
+#endif
+
+//新增
+#import "QZMacro.h"
+#import <MJRefresh.h>
+#import <IQKeyboardManager.h>
+#import <SDWebImage/UIButton+WebCache.h>
+#import <UIImageView+WebCache.h>
+#import <AFNetworking.h>
+#import <SVProgressHUD.h>
+#import <YYModel.h>
+#import "QZAFNetwork.h"
+#import "QZConnector.h"
+#import "MBProgressHUD.h"
+#import "FCUUID.h"
+#import "QZConfig.h"
+#import "QZAnalyticsManager.h"
+
+#import <UShareUI/UShareUI.h>

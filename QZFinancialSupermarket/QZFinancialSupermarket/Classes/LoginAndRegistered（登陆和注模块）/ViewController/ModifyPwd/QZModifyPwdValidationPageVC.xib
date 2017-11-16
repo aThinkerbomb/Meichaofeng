@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QZModifyPwdValidationPageVC">
+            <connections>
+                <outlet property="inputPwdView" destination="9hI-gf-lZz" id="5a3-4I-Cyc"/>
+                <outlet property="nextBtn" destination="R2W-5e-V0v" id="c0N-Sg-HUv"/>
+                <outlet property="nextBtnTop" destination="bco-IY-Y1r" id="yuo-Zc-elu"/>
+                <outlet property="smsCodeInputView" destination="06B-tm-p60" id="NWQ-sA-bZ8"/>
+                <outlet property="topDesLab" destination="WJN-kS-adf" id="1ww-ei-B0b"/>
+                <outlet property="topDesLeft" destination="yCv-SM-exU" id="fOV-p6-EME"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C2r-gC-GBK">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJN-kS-adf">
+                            <rect key="frame" x="20" y="0.0" width="42" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="HTA-9M-rQI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="WJN-kS-adf" firstAttribute="top" secondItem="C2r-gC-GBK" secondAttribute="top" id="0nA-GM-V2d"/>
+                        <constraint firstAttribute="width" secondItem="C2r-gC-GBK" secondAttribute="height" multiplier="375:50" id="mq3-a1-IMN"/>
+                        <constraint firstAttribute="bottom" secondItem="WJN-kS-adf" secondAttribute="bottom" id="stq-uz-9cp"/>
+                        <constraint firstItem="WJN-kS-adf" firstAttribute="leading" secondItem="C2r-gC-GBK" secondAttribute="leading" constant="20" id="yCv-SM-exU"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="06B-tm-p60" customClass="QZInputView">
+                    <rect key="frame" x="0.0" y="50" width="375" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="06B-tm-p60" secondAttribute="height" multiplier="375:50" id="Rfh-sw-0CL"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hI-gf-lZz" customClass="QZInputView">
+                    <rect key="frame" x="0.0" y="100" width="375" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2W-5e-V0v">
+                    <rect key="frame" x="27.5" y="240" width="320" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="R2W-5e-V0v" secondAttribute="height" multiplier="320:45" id="Xot-2X-16o"/>
+                    </constraints>
+                    <connections>
+                        <action selector="nextBtnAction:" destination="-1" eventType="touchUpInside" id="11t-LW-8px"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="06B-tm-p60" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2Cz-xi-7L2"/>
+                <constraint firstItem="R2W-5e-V0v" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="320:375" id="463-8f-ivt"/>
+                <constraint firstItem="C2r-gC-GBK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5xx-l1-xr3"/>
+                <constraint firstAttribute="trailing" secondItem="C2r-gC-GBK" secondAttribute="trailing" id="7b8-68-Pmo"/>
+                <constraint firstItem="06B-tm-p60" firstAttribute="top" secondItem="C2r-gC-GBK" secondAttribute="bottom" id="CD4-f6-szF"/>
+                <constraint firstItem="C2r-gC-GBK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DDG-Qj-jxl"/>
+                <constraint firstItem="9hI-gf-lZz" firstAttribute="height" secondItem="06B-tm-p60" secondAttribute="height" id="HsG-dd-IcA"/>
+                <constraint firstAttribute="trailing" secondItem="06B-tm-p60" secondAttribute="trailing" id="X1g-02-lG7"/>
+                <constraint firstItem="9hI-gf-lZz" firstAttribute="top" secondItem="06B-tm-p60" secondAttribute="bottom" id="XIm-uu-uDU"/>
+                <constraint firstItem="R2W-5e-V0v" firstAttribute="top" secondItem="9hI-gf-lZz" secondAttribute="bottom" constant="90" id="bco-IY-Y1r"/>
+                <constraint firstItem="9hI-gf-lZz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hIV-af-lqD"/>
+                <constraint firstItem="R2W-5e-V0v" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sdd-Wc-4l8"/>
+                <constraint firstAttribute="trailing" secondItem="9hI-gf-lZz" secondAttribute="trailing" id="w05-U0-kDD"/>
+            </constraints>
+            <point key="canvasLocation" x="43.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

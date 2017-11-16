@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QZGoToCommentsPageVC">
+            <connections>
+                <outlet property="inputTextView" destination="w2s-g6-zQf" id="7Ps-38-AoI"/>
+                <outlet property="nextBtn" destination="LZs-Wh-Nev" id="m29-DX-bGw"/>
+                <outlet property="nextBtnTop" destination="bLe-OY-mU8" id="LGd-QC-iM3"/>
+                <outlet property="top" destination="WnW-gQ-paX" id="ULg-si-Qjy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYM-Fl-GhB">
+                    <rect key="frame" x="0.0" y="10" width="375" height="225"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="w2s-g6-zQf" customClass="ZHTextView">
+                            <rect key="frame" x="15" y="15" width="345" height="195"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="w2s-g6-zQf" firstAttribute="centerY" secondItem="gYM-Fl-GhB" secondAttribute="centerY" id="8gw-Cd-j9O"/>
+                        <constraint firstItem="w2s-g6-zQf" firstAttribute="centerX" secondItem="gYM-Fl-GhB" secondAttribute="centerX" id="G3Y-Ai-x7r"/>
+                        <constraint firstItem="w2s-g6-zQf" firstAttribute="width" secondItem="gYM-Fl-GhB" secondAttribute="width" multiplier="345:375" id="Hlj-dD-f5r"/>
+                        <constraint firstAttribute="width" secondItem="gYM-Fl-GhB" secondAttribute="height" multiplier="375:225" id="QgS-eu-zgV"/>
+                        <constraint firstItem="w2s-g6-zQf" firstAttribute="height" secondItem="gYM-Fl-GhB" secondAttribute="height" multiplier="195:225" id="gW5-fl-Ja1"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZs-Wh-Nev">
+                    <rect key="frame" x="27.5" y="325" width="320" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="LZs-Wh-Nev" secondAttribute="height" multiplier="320:45" id="Gbr-qI-heM"/>
+                    </constraints>
+                    <connections>
+                        <action selector="nextBtnAction:" destination="-1" eventType="touchUpInside" id="aE6-8d-QPU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LZs-Wh-Nev" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0Xf-N2-G50"/>
+                <constraint firstItem="gYM-Fl-GhB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5uu-DT-zM0"/>
+                <constraint firstItem="LZs-Wh-Nev" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="320:375" id="IPs-EK-2dO"/>
+                <constraint firstItem="LZs-Wh-Nev" firstAttribute="top" secondItem="gYM-Fl-GhB" secondAttribute="bottom" constant="90" id="LlC-zl-A3x"/>
+                <constraint firstItem="gYM-Fl-GhB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="WnW-gQ-paX"/>
+                <constraint firstAttribute="trailing" secondItem="gYM-Fl-GhB" secondAttribute="trailing" id="bLe-OY-mU8"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

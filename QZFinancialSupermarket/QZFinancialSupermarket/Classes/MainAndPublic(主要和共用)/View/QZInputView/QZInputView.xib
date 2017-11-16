@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QZInputView">
+            <connections>
+                <outlet property="bottomLineRight" destination="otC-ib-XJ0" id="mtd-Ye-JvQ"/>
+                <outlet property="bottomLineView" destination="ILt-23-XMt" id="K2r-vS-KAv"/>
+                <outlet property="bottomLinrLeft" destination="kcP-9e-DG4" id="CMQ-0S-rfd"/>
+                <outlet property="iconImageLeft" destination="34g-2W-BGC" id="iza-eC-9in"/>
+                <outlet property="iconImageView" destination="MuI-tG-9GR" id="CkW-Wf-4hP"/>
+                <outlet property="inputTextField" destination="s2X-eC-2iB" id="MrB-7u-Roy"/>
+                <outlet property="midLineView" destination="5Bh-6j-Fbu" id="hej-gr-wCh"/>
+                <outlet property="rightBtn" destination="5OL-kl-zrF" id="VcC-bS-2xN"/>
+                <outlet property="rightBtnRight" destination="VqX-uH-sBd" id="dBO-e8-r3Q"/>
+                <outlet property="rightBtnW" destination="qG6-g8-bZb" id="sQ9-CJ-wXx"/>
+                <outlet property="textfieldLeft" destination="OAg-GU-TBS" id="PLI-fM-OGK"/>
+                <outlet property="view" destination="Bki-IQ-5Ah" id="W36-7Y-YvZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Bki-IQ-5Ah">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILt-23-XMt" userLabel="bottomLineView">
+                    <rect key="frame" x="0.0" y="150" width="375" height="0.0"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="wdu-DJ-qmf"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MuI-tG-9GR">
+                    <rect key="frame" x="17" y="0.0" width="35" height="150"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Bh-6j-Fbu">
+                    <rect key="frame" x="52" y="42" width="0.5" height="66"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="0.5" id="EfT-La-tLO"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s2X-eC-2iB" customClass="ZHTextField">
+                    <rect key="frame" x="67" y="0.0" width="195" height="150"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5OL-kl-zrF" customClass="ZHVerCodeButton">
+                    <rect key="frame" x="277" y="58" width="98" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="98" id="qG6-g8-bZb"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="wsq-Op-SNd"/>
+                    </constraints>
+                    <connections>
+                        <action selector="rightBtnClicked:" destination="-1" eventType="touchUpInside" id="zky-N1-KvC"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="5OL-kl-zrF" firstAttribute="leading" secondItem="s2X-eC-2iB" secondAttribute="trailing" constant="15" id="17h-al-GZD"/>
+                <constraint firstItem="MuI-tG-9GR" firstAttribute="leading" secondItem="Bki-IQ-5Ah" secondAttribute="leading" constant="17" id="34g-2W-BGC"/>
+                <constraint firstItem="MuI-tG-9GR" firstAttribute="width" secondItem="Bki-IQ-5Ah" secondAttribute="width" multiplier="35:375" id="3wU-b9-xLQ"/>
+                <constraint firstItem="5Bh-6j-Fbu" firstAttribute="leading" secondItem="MuI-tG-9GR" secondAttribute="trailing" id="8ha-Bg-niy"/>
+                <constraint firstItem="5Bh-6j-Fbu" firstAttribute="height" secondItem="Bki-IQ-5Ah" secondAttribute="height" multiplier="22:50" id="A7g-tc-DYx"/>
+                <constraint firstItem="MuI-tG-9GR" firstAttribute="top" secondItem="Bki-IQ-5Ah" secondAttribute="top" id="DDp-b5-dcw"/>
+                <constraint firstItem="s2X-eC-2iB" firstAttribute="leading" secondItem="MuI-tG-9GR" secondAttribute="trailing" constant="15" id="OAg-GU-TBS"/>
+                <constraint firstAttribute="bottom" secondItem="ILt-23-XMt" secondAttribute="bottom" id="UUD-kR-w8q"/>
+                <constraint firstAttribute="trailing" secondItem="5OL-kl-zrF" secondAttribute="trailing" id="VqX-uH-sBd"/>
+                <constraint firstAttribute="bottom" secondItem="MuI-tG-9GR" secondAttribute="bottom" id="c1Q-D0-cvN"/>
+                <constraint firstItem="ILt-23-XMt" firstAttribute="top" secondItem="s2X-eC-2iB" secondAttribute="bottom" id="eb5-pn-eMv"/>
+                <constraint firstItem="5Bh-6j-Fbu" firstAttribute="centerY" secondItem="Bki-IQ-5Ah" secondAttribute="centerY" id="fCc-78-2wl"/>
+                <constraint firstItem="ILt-23-XMt" firstAttribute="leading" secondItem="Bki-IQ-5Ah" secondAttribute="leading" id="kcP-9e-DG4"/>
+                <constraint firstItem="5OL-kl-zrF" firstAttribute="centerY" secondItem="Bki-IQ-5Ah" secondAttribute="centerY" id="ole-gW-Lg0"/>
+                <constraint firstAttribute="trailing" secondItem="ILt-23-XMt" secondAttribute="trailing" id="otC-ib-XJ0"/>
+                <constraint firstItem="s2X-eC-2iB" firstAttribute="top" secondItem="Bki-IQ-5Ah" secondAttribute="top" id="rwi-rz-WEv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-30.5" y="-183"/>
+        </view>
+    </objects>
+</document>
